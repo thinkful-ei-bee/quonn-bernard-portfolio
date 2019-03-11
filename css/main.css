@@ -1,0 +1,388 @@
+/* Variables */
+/* End of Variables */
+/* Base Styles */
+* {
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  color: #264549;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+section {
+  font-size: 22px;
+}
+
+section h1,
+section h2 {
+  margin-bottom: 15px;
+}
+
+.overlay-box {
+  position: relative;
+  height: 200px;
+  background-image: url("images/code.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.65);
+  /*dim the background*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay h1 {
+  color: #fff;
+}
+
+.btn {
+  border-radius: 5px;
+  background: black;
+  color: orange;
+  border: none;
+  margin: 0 3px 15px;
+  padding: 10px;
+}
+
+.big-text {
+  font-size: 36px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px #333;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 1px #333;
+          box-shadow: 1px 1px 1px #333;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+/* End of Base Styles */
+/* *********************************** */
+/* Navigation Styles */
+.top-nav {
+  background: #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  -webkit-box-shadow: 1px 1px 1px #999;
+          box-shadow: 1px 1px 1px #999;
+}
+
+.top-nav .logo-box {
+  font-weight: 900;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav .logo-box h1 {
+  font-size: 18px;
+}
+
+.top-nav .menu-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  font-size: 18px;
+}
+
+.top-nav .menu-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: none;
+  text-align: center;
+}
+
+.top-nav .menu-box ul a {
+  margin: 0 5px;
+  font-weight: 700;
+}
+
+.mbl-nav {
+  color: white;
+  background: black;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  left: -250px;
+  z-index: 200;
+  top: 57px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/* End of Navigation Styles */
+/* *********************************** */
+/* Home-section styles */
+.home-section {
+  border: 1px solid #fff;
+  padding: 100px 30px 50px 30px;
+  text-align: center;
+}
+
+.home-section figure {
+  text-align: center;
+  width: 100%;
+}
+
+.home-section figure img {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 10px solid #eee;
+  -webkit-box-shadow: 1px 1px 1px #999;
+          box-shadow: 1px 1px 1px #999;
+  margin-bottom: 20px;
+}
+
+.home-section h4 {
+  color: darkorange;
+}
+
+.home-section h1 {
+  margin-top: -13px;
+  background: darkorange;
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.home-section .banner-p {
+  font-size: 16px;
+  padding: 0 7%;
+}
+
+/* End of Home-section styles */
+/* map-box-section styles */
+.about-label-box {
+  background: url("../images/code.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-label-box .overlay-box {
+  position: relative;
+  height: 200px;
+}
+
+/* End of map-box-section styles */
+/* *********************************** */
+/* About Section Styles */
+.about-section {
+  border: 1px solid #fff;
+}
+
+.about-section p {
+  margin-bottom: 50px;
+}
+
+.about-section .tech-logos {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-section .tech-logos img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+/* End of About Section Styles */
+/* *********************************** */
+/* Projects Label Styles */
+.projects-label-box {
+  background: url("../images/code.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-label-box .overlay-box {
+  position: relative;
+  height: 200px;
+}
+
+/* End of Projects Label Styles */
+/* *********************************** */
+/* Projects Section Styles */
+.projects-section {
+  border: 1px solid #fff;
+}
+
+.projects-section article {
+  border-radius: 5px;
+  background: url("../images/quiz-app.png");
+  background-size: cover;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects-section article .overlay {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  /*dim the background*/
+}
+
+.projects-section article h1 {
+  margin-bottom: 25px;
+  padding: 5px;
+  background: darkorange;
+}
+
+.projects-section article a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.projects-section article a:hover {
+  color: darkorange;
+}
+
+.projects-section article:last-child {
+  background: url("../images/bookmarks-app.png");
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+/* End of Projects Section Styles */
+/* *********************************** */
+/* Map Box Section Styles */
+.map-box-section {
+  padding: 0;
+  background: url("https://i.imgur.com/xGrStBW.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* End of Map Box Section Styles */
+/* *********************************** */
+/* Contact Section Styles */
+.contact-section form label,
+.contact-section form select,
+.contact-section form textarea,
+.contact-section form input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-section form input,
+.contact-section form select,
+.contact-section form textarea {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-section form .submitBtn {
+  width: 40%;
+}
+
+/* End of Contact Section Styles */
+/* *********************************** */
+/* Footer Styles */
+footer {
+  background: lightgrey;
+  padding: 20px 15px 10px;
+  font-size: 14px;
+}
+
+footer .footer-icons {
+  float: right;
+}
+
+footer .footer-icons .fas,
+footer .footer-icons .fab {
+  color: #fff;
+  text-shadow: 1px 1px 1px #999;
+  margin-right: 5px;
+}
+
+/* Footer Styles */
+/* *********************************** */
+/* Class Styles */
+/* End of Class Styles */
+@media screen and (min-width: 650px) {
+  .top-nav .menu-box ul {
+    display: block;
+  }
+  .top-nav .menu-box a {
+    font-size: 18px;
+  }
+  .top-nav .menu-box .fa-bars {
+    display: none;
+  }
+  .mbl-nav {
+    left: -250px;
+  }
+  .submitBtn {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

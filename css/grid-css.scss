@@ -1,0 +1,41 @@
+body {
+  background: red; }
+
+/*
+ 
+T.O.C.
+
+*/
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+/* End of Base Styles */
+/* *********************************** */
+/* Navigation Styles */
+nav {
+  background: #eee; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* border: 1px solid black; */ }
+
+li {
+  float: right; }
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none; }
+
+/* End of Navigation Styles */
+/* *********************************** */
+/* Class Styles */
+.roboto-text {
+  font-family: "Roboto", sans-serif; }
+
+/* End of Class Styles */
