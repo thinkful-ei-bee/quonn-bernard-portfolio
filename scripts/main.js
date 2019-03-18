@@ -3,7 +3,12 @@
 function startingPoint() {
   layout.bindEventHandlers();
   layout.checkWidth();
-  //   layout.renderLogos();
+  layout.renderMblNav();
+  layout.renderCreds();
+  layout.renderProjects();
+  store.getRepos();
+  layout.renderStats();
+  store.getDaysTil();
 }
 
 $(startingPoint);

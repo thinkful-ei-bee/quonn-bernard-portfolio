@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <!-- HEAD -->
+
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Quonn Bernard Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- STYLESHEETS (GRID + CUSTOM STYLES) -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -12,18 +16,53 @@
       href="css/grid-css.css"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
-      rel="stylesheet"
-    />
+    <!-- END OF STYLESHEETS (GRID + BASE STYLES) -->
+
+    <!-- FONT-AWESOME + GOOGLE FONTS -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Anton|Open+Sans|Raleway:400,700,800,900|Oswald"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_OUUhq1EQL8nE1dqlneZDY");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            emailjs.sendForm("contact_service", "contact_template", this);
+          });
+      };
+    </script>
   </head>
+  <!-- END OF FONT-AWESOME + GOOGLE FONTS -->
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- BODY STARTS HERE -->
+
   <body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- NAVS -->
+
+    <!-- TOP-NAV -->
+
     <nav class="top-nav nav-grid">
       <div class="nav-grid-item logo-box">
         <h1>QUONN BERNARD</h1>
@@ -31,13 +70,18 @@
       <div class="nav-grid-item menu-box">
         <i class="fas fa-bars"></i>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- END OF TOP-NAV -->
+
+    <!-- MBL-NAV -->
+
     <nav class="mbl-nav">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -45,33 +89,62 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-    <section id="home" class="home-section">
-      <figure>
-        <img src="https://i.imgur.com/hgkfqul.jpg" alt="" />
-      </figure>
-      <!-- <h1>Let Me Solve Your Next Problem</h1> -->
-      <h4 class="text-shadow">COMMUNICATOR.</h4>
-      <h2 class="text-shadow">PROBLEM SOLVER.</h2>
-      <div class="banner-p">
-        <h1 class="big-text text-shadow box-shadow">WEB DEVELOPER.</h1>
-        <p>
-          Hi, I'm Quonn. I'm a web developer located in Long Beach, California.
-          I'd love to create a solution for you!.
-        </p>
+      <div style="height:100%; background: gold; width: 100%; padding:30px;">
+        <div class="links" style="display:inline-block;">
+          <a href="https://github.com/quonn-bernard"
+            ><i class="fab fa-github"></i>
+            <h6 style="display:inline-block;">GITHUB</h6>
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/quonn-bernard-6808118a/"
+            ><i class="fab fa-linkedin-in"></i>
+            <h6 style="display:inline-block;">LINKEDIN</h6>
+          </a>
+        </div>
+        <div class="links">
+          <a href="mailto: qber83@gmail.com" class="big-text"
+            ><i class="fa fa-envelope"></i>
+            <h6 style="display:inline-block;">EMAIL ME</h6>
+          </a>
+        </div>
       </div>
-    </section>
-    <section class="about-label-box">
-      <div class="overlay-box">
-        <div class="overlay">
-          <h1>ABOUT ME</h1>
+      <div style="height: 50px; background: black;"></div>
+    </nav>
+
+    <!--END OF MBL-NAV -->
+
+    <!-- END OF NAVS -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- HOME-SECTION -->
+
+    <section id="home" class="home-section">
+      <div class="banner-overlay">
+        <figure>
+          <img src="https://i.imgur.com/G62Qixp.png" alt="" />
+        </figure>
+        <h4>I AM A...</h4>
+        <h3 class="text-shadow gold-text">COMMUNICATOR.</h3>
+        <h3 class="text-shadow">PROBLEM SOLVER.</h3>
+        <div class="banner-p">
+          <h1 class="big-text text-shadow box-shadow">WEB DEVELOPER.</h1>
         </div>
       </div>
     </section>
+
+    <!-- END OF HOME-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ABOUT-SECTION -->
+
     <section id="about" class="about-section text-section-grid">
       <div class=""></div>
       <div class="section-grid-item">
-        <h1>Quick Info</h1>
+        <h1 class="big-text">A BIT OF MY STORY...</h1>
+
         <p>
           I am a web developer, and current student in the Thinkful Engineering
           Immersion bootcamp. I get better everyday at Javascript and has it
@@ -80,137 +153,285 @@
           Jedi coding powers!
         </p>
 
-        <h1>Tools Of The Trade</h1>
-        <div class="tech-logos">
-          <img src="https://i.imgur.com/2Q4LwVh.png" alt="tech-logos" />
-        </div>
+        <span class="about-span"
+          >Click one of the links to view my crendentials...</span
+        >
+        <figure style="height: 15px;"></figure>
+        <a href="#credentials" class="big-text">GOT TO CREDENTIALS</a>
       </div>
       <div class=""></div>
     </section>
 
+    <!-- END OF ABOUT-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- TECH-LOGOS-SECTION -->
+
+    <section id="tech" class="tech-section text-section-grid">
+      <div></div>
+      <div class="section-grid-item">
+        <h1 class="big-text text-shadow box-shadow">Tools Of The Trade</h1>
+        <div class="tech-logos">
+          <img src="https://i.imgur.com/DYpE3QQ.png" alt="tech-logos" />
+        </div>
+      </div>
+      <div></div>
+    </section>
+
+    <!--END OF TECH-LOGOS-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- NO SPAGHETTI CODE -->
+
     <section class="projects-label-box">
       <div class="overlay-box">
-        <div class="overlay">
-          <h1>PROJECTS</h1>
+        <div class="overlay text-section-grid">
+          <div></div>
+          <div class="section-grid-item">
+            <i class="fas fa-ban"></i>
+            <h1 class="">
+              NO TO SPAGHETTI CODE!!!
+            </h1>
+          </div>
+          <div></div>
         </div>
-        <!-- <img simages/code.jpgrc="" alt="code screenshot" /> -->
       </div>
     </section>
-    <section id="projects" class="projects-section section-grid">
-      <div class="section-grid-item"></div>
-      <div class="section-grid-item">
-        <article>
-          <div class="overlay">
-            <div>
-              <h1 class="big-text text-shadow box-shadow">QUIZ APP</h1>
-              <div>
+
+    <!-- END OF NO SPAGHETTI CODE -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- STATS-SECTION -->
+
+    <section id="stats">
+      <h1 class="big-text">SO FAR I HAVE...</h1>
+      <section class="stats-section section-grid">
+        <div class="section-grid-item"></div>
+        <div class="section-grid-item">
+          <div class="stats-box">
+            <div class="stat">
+              <i class="fab fa-github"></i>
+
+              <h1 class="">
+                [
                 <a
-                  href="https://thinkful-ei-bee.github.io/mehul-quonn-quiz-app/"
-                  class=""
-                  >LIVE DEMO</a
+                  href="https://github.com/quonn-bernard?tab=repositories"
+                  class="white-text"
+                  ><span><span id="repos" class="black-box"></span></span
+                  >REPOS</a
                 >
-              </div>
-              <div><a href="" class="">CASE STUDY</a></div>
-              <div>
-                <a
-                  href="https://github.com/thinkful-ei-bee/mehul-quonn-quiz-app"
-                  class=""
-                  >CODE REPO</a
-                >
-              </div>
+                ]
+              </h1>
+              <h6>(AND GROWING....)</h6>
+              <!-- <h5>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </h5> -->
             </div>
           </div>
-        </article>
-        <article>
-          <div class="overlay">
-            <div>
-              <h1 class="big-text text-shadow box-shadow">BM APP</h1>
-              <div>
-                <a
-                  href="https://thinkful-ei-bee.github.io/quonn-donald-bookmarks-app/"
-                  class=""
-                  >LIVE DEMO</a
+        </div>
+        <div class="section-grid-item">
+          <div class="stats-box">
+            <div class="stat">
+              <i class="fas fa-rocket"></i>
+
+              <h1 class="">
+                [
+                <a href="#projects" class="white-text"
+                  ><span><span id="proyectos" class="black-box"></span></span
+                  >PROJECTS</a
                 >
-              </div>
-              <div><a href="" class="">CASE STUDY</a></div>
-              <div>
-                <a
-                  href="https://github.com/thinkful-ei-bee/quonn-donald-bookmarks-app"
-                  class=""
-                  >CODE REPO</a
-                >
-              </div>
+                ]
+              </h1>
+              <h6>(2 APPS & 1 WEBSITE)</h6>
+              <!-- <h5>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h5> -->
             </div>
           </div>
-        </article>
-      </div>
-      <div class="section-grid-item"></div>
+        </div>
+        <div class="section-grid-item">
+          <div class="stats-box">
+            <div class="stat">
+              <i class="fas fa-file-code"></i>
+
+              <h1 class="big-text">
+                [
+
+                <a href="" style="text-decoration:none; color: white;"
+                  ><span><span id="days" class="black-box"></span></span>DAYS
+                </a>
+                ]
+              </h1>
+              <h6>(TIL BOOTCAMP IS OVER)</h6>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-item"></div>
+      </section>
     </section>
+
+    <!-- END OF STATS - SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- PROJECTS-SECTION -->
+
+    <section id="projects">
+      <h1 class="big-text text-shadow box-shadow">WORK SAMPLES</h1>
+      <section class="projects-section project-grid">
+        <div class="project-grid-item">
+          <figure id="proj-box-4"></figure>
+        </div>
+
+        <div class="project-grid-item">
+          <figure id="proj-box-0" class="proj-box"></figure>
+          <figure id="proj-box-1" class="proj-box"></figure>
+          <figure id="proj-box-2" class="proj-box"></figure>
+        </div>
+
+        <div class="project-grid-item">
+          <figure id="proj-box-3"></figure>
+        </div>
+      </section>
+    </section>
+
+    <!-- END OF PROJECTS-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- MAP-BOX-SECTION -->
 
     <section class="map-box-section">
       <div class="overlay-box">
-        <div class="overlay">
-          <h1>LOCATED IN DOWNTOWN LONG BEACH, CALIFORNIA</h1>
-        </div>
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.6428457841903!2d-118.19938468479234!3d33.769893980683705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd31364ce78f53%3A0x8d9db864ba5ef35f!2s210+Magnolia+Ave%2C+Long+Beach%2C+CA+90802!5e0!3m2!1sen!2sus!4v1552254855685"
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212190.21226647173!2d-118.2961943508793!3d33.800128885632596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cae84099d759%3A0xa1003afac42a8faa!2sLong+Beach%2C+CA!5e0!3m2!1sen!2sus!4v1552503368926"
           width="100%"
           height="100%"
           frameborder="0"
           style="border:0"
           allowfullscreen
-        ></iframe> -->
+        ></iframe>
+        <div class="overlay">
+          <h1 class="big-text">LONG BEACH, CALIFORNIA</h1>
+        </div>
       </div>
-    </section>
-    <section id="contact" class="contact-section section-grid">
-      <div></div>
-      <div class="section-grid-item">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          />
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
-          <label for="role">Your Role</label>
-          <select id="role" name="role">
-            <option value="Employer">Employer</option>
-            <option value="SBO">Small Business Owner</option>
-            <option value="other">Other</option>
-          </select>
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            name="subject"
-            placeholder="Write something.."
-            style="height:170px"
-          ></textarea>
-          <input class="submitBtn" type="submit" value="Submit" />
-        </form>
-      </div>
-      <div></div>
     </section>
 
+    <!-- END OF MAP-BOX-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- END OF CREDENTIALS -->
+
+    <section id="credentials" class="credential-banner">
+      <header id="cert" class="opt selected">
+        <h3>WEB-DEV CERT</h3>
+      </header>
+      <header id="resume" class="opt">
+        <h3>MY RESUME</h3>
+      </header>
+    </section>
+    <section id="cred-content" class="cred-content"></section>
+
+    <!-- END OF CREDENTIALS -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- CONTACT-SECTION -->
+
+    <section id="contact" class="contact-links-section contact-grid">
+      <div class="contact-grid-item"></div>
+      <div class="contact-grid-item">
+        <h1 class="big-text text-shadow">LET'S GET SOCIAL!</h1>
+        <div class="links">
+          <i class="fab fa-github"></i
+          ><a href="https://github.com/quonn-bernard" class="big-text"
+            >GITHUB</a
+          >
+        </div>
+        <div class="links">
+          <i class="fab fa-linkedin-in"></i
+          ><a
+            href="https://www.linkedin.com/in/quonn-bernard-6808118a/"
+            class="big-text"
+            >LINKEDIN</a
+          >
+        </div>
+        <div class="links" w>
+          <i class="fa fa-envelope"></i
+          ><a href="mailto: qber83@gmail.com" class="big-text">EMAIL ME</a>
+        </div>
+
+        <form
+          id="contactForm"
+          class="box-shadow"
+          action="https://www.formbackend.com/f/4f82fd96573ef248"
+          method="POST"
+        >
+          <p class="form-text">My name is</p>
+          <input
+            class="form-text"
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder=""
+            required
+          />.
+          <p class="form-text">I am a/an</p>
+          <select id="role" class="capacity" name="role" required>
+            <option style="color:white" disabled selected></option>
+            <option style="color:white" value="Employer">Employer</option>
+            <option style="color:white" value="SBO"
+              >Small Business Owner</option
+            >
+            <option style="color:white" value="other">Other</option>
+          </select>
+          <p class="form-text">I have visited your website today, because</p>
+          <textarea id="message" name="message" required></textarea>
+          <div>
+            <input id="submit" class="submitBtn" type="submit" value="SUBMIT" />
+          </div>
+        </form>
+      </div>
+      <div class="contact-grid-item"></div>
+    </section>
+
+    <!-- END OF CONTACT-SECTION -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- FOOTER -->
+
     <footer class="footer-grid">
-      <div class="footer-grid-item"><p>© 2019 Quonn Bernard</p></div>
+      <div class="footer-grid-item">
+        <p>© 2019 Quonn Bernard</p>
+      </div>
       <div class="footer-grid-item">
         <p class="footer-icons">
-          <i class="fab fa-github"></i><i class="fab fa-linkedin-in"></i
-          ><i class="fas fa-envelope"></i>
+          <a href="https://github.com/quonn-bernard"
+            ><i class="fab fa-github"></i></a
+          ><a href="https://www.linkedin.com/in/quonn-bernard-6808118a/"
+            ><i class="fab fa-linkedin-in"></i></a
+          ><a><i class="fas fa-envelope"></i></a>
         </p>
       </div>
     </footer>
+
+    <!-- END OF FOOTER -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- SCRIPTS -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/layout.js"></script>
     <script src="scripts/store.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- END OF SCRIPTS -->
   </body>
 </html>

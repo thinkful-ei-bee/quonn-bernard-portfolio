@@ -1,41 +1,101 @@
+body {
+  background: gold;
+}
+
 /*
  
 T.O.C.
 
 */
-/* Navigation Grid Styles */
+/* nav grid styles */
 .nav-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 75% 25%;
-  padding: 10px 24px;
-}
-
-.footer-grid {
-  display: grid;
+  -ms-grid-columns: 70% 30%;
   grid-template-columns: 70% 30%;
 }
 
-.section-grid {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+.nav-grid .nav-grid-item {
+  padding: 5px 15px;
+  font-size: 30px;
 }
 
 .text-section-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  -ms-grid-columns: auto 90% auto;
+  grid-template-columns: auto 90% auto;
 }
 
-.section-grid-item {
+.text-section-grid .section-grid-item {
+  padding: 75px 30px;
+}
+
+/* .section-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 30% 30% 30% 5%;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+} */
+
+.project-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 85% auto;
+  grid-template-columns: auto 85% auto;
+}
+
+.contact-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 85% auto;
+  grid-template-columns: auto 85% auto;
+}
+.contact-grid-item {
   padding: 75px 0;
 }
 
-/* Navigation Grid Styles */
-@media screen and (min-width: 650px) {
-  .section-grid-item {
-    padding: 100px 0;
-  }
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
+}
 
+.footer-grid .footer-grid-item {
+  padding: 5px 15px 2px;
+}
+
+@media screen and (min-width: 600px) {
   .nav-grid {
-    grid-template-columns: 30% 70%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
 }
+
+@media screen and (min-width: 850px) {
+  .project-grid-item {
+    padding: 30px 15px;
+  }
+  .text-section-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 75% auto;
+    grid-template-columns: auto 75% auto;
+  }
+  .text-section-grid .section-grid-item {
+    /* padding: 75px 30px; */
+  }
+  .section-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 27% 27% 27% auto;
+    grid-template-columns: auto 27% 27% 27% auto;
+  }
+  .section-grid-item {
+    padding: 0 15px 0;
+  }
+}
+/*# sourceMappingURL=grid-css.css.map */
